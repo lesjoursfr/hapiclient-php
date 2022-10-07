@@ -1,15 +1,19 @@
 <?php
+
 namespace HapiClient\Http;
 
+use GuzzleHttp\Client;
 use GuzzleHttp\UriTemplate\UriTemplate;
-use HapiClient\Http\Auth\AuthenticationMethod;
-use HapiClient\Hal\ResourceInterface;
-use HapiClient\Hal\Resource;
-use HapiClient\Hal\RegisteredRel;
 use HapiClient\Exception;
+use HapiClient\Hal\RegisteredRel;
+use HapiClient\Hal\Resource;
+use HapiClient\Hal\ResourceInterface;
+use HapiClient\Http\Auth\AuthenticationMethodInterface;
 use HapiClient\Util\Misc;
-use \GuzzleHttp\Client;
 
+/**
+ * An HAPI Client.
+ */
 final class HapiClient implements HapiClientInterface
 {
     private $apiUrl;
@@ -22,20 +26,13 @@ final class HapiClient implements HapiClientInterface
     private $entryPointResource;
 
     /**
-     * @param $apiUrl			string	The URL pointing to the API server.
-     * @param $entryPointUrl	string	The URL to the entry point Resource.
-     * @param $profile			string	The URL pointing to the HAL profile containing
-     *									the resources and their descriptors.
-     *									If specified, the client will send an Accept header
-     *									with application/hal+json and a profile attribute
-     *									containing the value set here.
-     * @param $authenticationMethod	AuthenticationMethod	The authentication method.
+     * @param string                        $apiUrl               The URL pointing to the API server
+     * @param string                        $entryPointUrl        The URL to the entry point Resource
+     * @param string                        $profile              The URL pointing to the HAL profile containing the resources and their descriptors.
+     *                                                            If specified, the client will send an Accept header with application/hal+json and a profile attribute containing the value set here.
+     * @param AuthenticationMethodInterface $authenticationMethod The authentication method
      */
-    public function __construct(
-            $apiUrl = null,
-            $entryPointUrl = '/',
-            $profile = null,
-            AuthenticationMethod $authenticationMethod = null)
+    public function __construct($apiUrl = null, $entryPointUrl = '/', $profile = null, AuthenticationMethodInterface $authenticationMethod = null)
     {
         $this->apiUrl = trim($apiUrl);
         $this->entryPointUrl = trim($entryPointUrl);
@@ -43,7 +40,7 @@ final class HapiClient implements HapiClientInterface
         $this->authenticationMethod = $authenticationMethod;
 
         if ($this->apiUrl) {
-            $baseUrl = rtrim($this->apiUrl, '/') . '/';
+            $baseUrl = rtrim($this->apiUrl, '/').'/';
 
             $this->client = new Client(['base_uri' => $baseUrl]);
         } else {
@@ -93,6 +90,9 @@ final class HapiClient implements HapiClientInterface
 
     /**
      * The magic setter is overridden to insure immutability.
+     *
+     * @param $name
+     * @param $value
      */
     final public function __set($name, $value)
     {
@@ -107,7 +107,7 @@ final class HapiClient implements HapiClientInterface
         $options = [];
         $options['http_errors'] = false;
 
-        if (($verify = Misc::verify($request->getUrl(), __DIR__ . '/../CA/')) !== null) {
+        if (($verify = Misc::verify($request->getUrl(), __DIR__.'/../CA/')) !== null) {
             $options['verify'] = $verify;
         }
 
@@ -119,7 +119,7 @@ final class HapiClient implements HapiClientInterface
 
         // If Unauthorized, maybe the authorization just timed out.
         // Try it again to be sure.
-        if ($httpResponse->getStatusCode() == 401 && $this->authenticationMethod != null) {
+        if (401 === $httpResponse->getStatusCode() && null !== $this->authenticationMethod) {
             // Create the HTTP request (and Authorize again)
             $httpRequest = $this->createHttpRequest($request);
 
@@ -136,13 +136,15 @@ final class HapiClient implements HapiClientInterface
         // Exception depending on status code for 3xx, 4xx and 5xx
         if ($statusCode >= 300 && $statusCode < 400) {
             throw new Exception\HttpRedirectionException($httpRequest, $httpResponse);
-        } elseif ($statusCode >= 400 && $statusCode < 500) {
-            throw new Exception\HttpClientErrorException($httpRequest, $httpResponse);
-        } elseif ($statusCode >= 500 && $statusCode < 600) {
-            throw new Exception\HttpServerErrorException($httpRequest, $httpResponse);
-        } else {
-            throw new Exception\HttpException($httpRequest, $httpResponse);
         }
+        if ($statusCode >= 400 && $statusCode < 500) {
+            throw new Exception\HttpClientErrorException($httpRequest, $httpResponse);
+        }
+        if ($statusCode >= 500 && $statusCode < 600) {
+            throw new Exception\HttpServerErrorException($httpRequest, $httpResponse);
+        }
+
+        throw new Exception\HttpException($httpRequest, $httpResponse);
     }
 
     /**
@@ -155,7 +157,7 @@ final class HapiClient implements HapiClientInterface
         }
 
         if (!is_array($follow)) {
-            $follow = array($follow);
+            $follow = [$follow];
         }
 
         foreach ($follow as $hop) {
@@ -190,6 +192,7 @@ final class HapiClient implements HapiClientInterface
     {
         try {
             $url = $resource->getLink(RegisteredRel::SELF)->getHref();
+
             return $this->sendRequest(new Request($url));
         } catch (\Exception $ignored) {
             return $resource;
@@ -199,8 +202,10 @@ final class HapiClient implements HapiClientInterface
     /**
      * Instantiates the HttpRequest depending on the
      * configuration from the given Request.
-     * @param $request	RequestInterface	The Request configuration.
-     * @return	The HTTP request.
+     *
+     * @param RequestInterface $request The Request configuration
+     *
+     * @return \GuzzleHttp\Psr7\Request the HTTP request
      */
     private function createHttpRequest(RequestInterface $request)
     {
@@ -231,7 +236,7 @@ final class HapiClient implements HapiClientInterface
 
         // Accept hal+json response
         if ($this->profile) {
-            $headers['Accept'] = 'application/hal+json; profile="' . $this->profile . '"';
+            $headers['Accept'] = 'application/hal+json; profile="'.$this->profile.'"';
         } else {
             $headers['Accept'] = 'application/json';
         }
@@ -241,7 +246,7 @@ final class HapiClient implements HapiClientInterface
             $request->getMethod(),
             $url,
             array_merge($headers, $headersToAdd),
-            $body ? \GuzzleHttp\Psr7\stream_for($body) : null
+            $body ? \GuzzleHttp\Psr7\Utils::streamFor($body) : null
         );
 
         return $httpRequest;

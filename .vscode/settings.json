@@ -1,0 +1,19 @@
+{
+	"eslint.format.enable": true,
+	"files.exclude": {
+		"vendor": true,
+		".phpdoc": true
+	},
+	"search.exclude": {
+		"vendor": true,
+		".phpdoc": true
+	},
+	"files.watcherExclude": {
+		"vendor": true,
+		".phpdoc": true
+	},
+	"phpcs.composerJsonPath": "composer.json",
+	"phpcs.standard": "./phpcs.xml",
+	"php-cs-fixer.config": ".php-cs-fixer.php",
+	"php-cs-fixer.onsave": true
+}

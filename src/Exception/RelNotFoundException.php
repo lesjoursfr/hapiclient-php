@@ -1,4 +1,5 @@
 <?php
+
 namespace HapiClient\Exception;
 
 /**
@@ -11,22 +12,22 @@ class RelNotFoundException extends \Exception
     private $availableRels;
 
     /**
-     * @param $missingRel		string|Rel				The missing relation type.
-     * @param $availableRels	Numeric array	The list of available relation types.
+     * @param string|Rel $missingRel    The missing relation type
+     * @param array      $availableRels The list of available relation types
      */
     public function __construct($missingRel, array $availableRels)
     {
         parent::__construct(
-            'Rel not found: ' . $missingRel . '. ' .
-            'Relation types available: ' . implode(', ', $availableRels) . '.'
+            'Rel not found: '.$missingRel.'. '.
+            'Relation types available: '.implode(', ', $availableRels).'.'
         );
-        
+
         $this->missingRel = $missingRel;
         $this->availableRels = $availableRels;
     }
-    
+
     /**
-     * @return	Rel		The missing relation type.
+     * @return Rel the missing relation type
      */
     public function getMissingRel()
     {
@@ -36,7 +37,8 @@ class RelNotFoundException extends \Exception
     /**
      * Returns the list of available relation types available in the
      * _links or _embedded property the given Rel was missing in.
-     * @return Numeric array.
+     *
+     * @return array
      */
     public function getAvailableRels()
     {

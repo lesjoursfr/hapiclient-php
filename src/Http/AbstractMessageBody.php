@@ -1,33 +1,38 @@
 <?php
+
 namespace HapiClient\Http;
 
-abstract class MessageBody
+/**
+ * An abstract request message.
+ */
+abstract class AbstractMessageBody
 {
     /**
-     * @return	string	The Content-Type header.
+     * @return string the Content-Type header
      */
     abstract public function getContentType();
-    
+
     /**
-     * @return	string	The Content-Length header.
+     * @return string the Content-Length header
      */
     abstract public function getContentLength();
-    
+
     /**
-     * @return	string	The content.
+     * @return string the content
      */
     abstract public function getContent();
-    
+
     /**
      * The magic setter is overridden to insure immutability.
+     *
+     * @param $name
+     * @param $value
      */
     final public function __set($name, $value)
     {
     }
-    
-    /**
-     * @return	string	The content.
-     */
+
+    // phpcs:ignore Symfony.Commenting.FunctionComment.Missing
     final public function __toString()
     {
         return $this->getContent();

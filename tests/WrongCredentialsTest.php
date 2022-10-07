@@ -1,21 +1,23 @@
 <?php
+
 namespace HapiClient\tests;
 
+use HapiClient\Exception;
 use HapiClient\Http;
 use HapiClient\Http\Auth;
-use HapiClient\Exception;
 use PHPUnit\Framework\TestCase;
 
+// phpcs:ignore Symfony.Commenting.ClassComment.Missing
 class WrongCredentialsTest extends TestCase
 {
-    const APIURL = 'https://api.preprod.slimpay.com';
-    const PROFILEURL = 'https://api.slimpay.net/alps/v1';
-    const APPID = 'democreditor01';
-    const APPSECRET = 'wrongsecret';
-    const SCOPE = 'api';
-    
+    public const APIURL = 'https://api.preprod.slimpay.com';
+    public const PROFILEURL = 'https://api.slimpay.net/alps/v1';
+    public const APPID = 'democreditor01';
+    public const APPSECRET = 'wrongsecret';
+    public const SCOPE = 'api';
+
     private $hapiClient;
-    
+
     /**
      * @before
      */

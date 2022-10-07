@@ -1,26 +1,35 @@
 # HAPI Client
 
-An HTTP Client implementing the [HAL specification](https://tools.ietf.org/html/draft-kelly-json-hal-07).
+An HTTP Client implementing the [HAL specification](https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-07).
+This project is a fork of the original Slimpay PHP HAPI client project rewrited to fix an issue with Guzzle 7.
 
-## Requirements
+### Installation
 
-PHP 7.2 or higher
-
-## Installation
-
-Using [Composer](https://getcomposer.org/):
-```js
-"require":{
-	 "slimpay/hapiclient-guzzle7":"1.0.*"
-}
+```
+composer install lesjoursfr/hapiclient-php
 ```
 
-If you are not familiar with Composer, you can download a pre-built [release](https://github.com/SlimPay/hapiclient-php-guzzle7/releases) with the dependencies.
+### Documentation
 
-## Guzzle < 7
+The documentation is available [here](https://lesjoursfr.github.io/hapiclient-php/)
 
-If you want to use an another version of PHP or Guzzle, please use our previous HAPI Client => https://github.com/SlimPay/hapiclient-php
+### Development only
 
-## Use
+To install the Symphony PHP CS you have to run the following commands (assuming you have downloaded [composer.phar](https://getcomposer.org/)) :
 
-Examples and full working snippets are available in the [HAPI Browser](https://dev.slimpay.com/hapi/browser).
+```
+php composer.phar install
+vendor/bin/phpcs --config-set installed_paths vendor/escapestudios/symfony2-coding-standard
+```
+
+Then you can check the code style with the following command
+
+```
+vendor/squizlabs/php_codesniffer/bin/phpcs --standard=./phpcs.xml --no-cache --parallel=1 ./src ./tests
+```
+
+To generate the documentation you have to run (assuming you have downloaded [phpDocumentor.phar](https://www.phpdoc.org/)) :
+
+```
+php phpDocumentor.phar run -d src/ -t docs
+```

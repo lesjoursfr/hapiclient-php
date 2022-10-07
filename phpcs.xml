@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ruleset>
+    <rule ref="Symfony"/>
+
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="240"/>
+            <property name="absoluteLineLimit" value="0"/>
+        </properties>
+    </rule>
+
+    <rule ref="Symfony.Commenting.License.Warning">
+        <severity>0</severity>
+    </rule>
+</ruleset>
