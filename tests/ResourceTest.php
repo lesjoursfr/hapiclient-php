@@ -87,7 +87,7 @@ END;
         // Check the totals
         $total1 = $order1State['total'];
         $total2 = $order2State['total'];
-        $this->assertTrue(20 === $total1 && 30 === $total2 || 20 === $total2 && 30 === $total1);
+        $this->assertTrue(20.0 === $total1 && 30.0 === $total2 || 20.0 === $total2 && 30.0 === $total1);
 
         // Check the links of the embedded orders
         $this->assertEquals(3, count($order1->getAllLinks()));
@@ -104,12 +104,12 @@ END;
         $resource1 = Hal\Resource::fromJson(self::JSON_REPRESENTATION);
         $resource2 = Hal\Resource::fromJson(self::JSON_REPRESENTATION);
 
-        $this->assertTrue($resource1->getState() === $resource2->getState(), 'States are not equal.');
+        $this->assertEquals($resource1->getState(), $resource2->getState(), 'States are not equal.');
 
-        $this->assertTrue($resource1->getAllLinks() === $resource2->getAllLinks(), 'Links are not equal.');
+        $this->assertEquals($resource1->getAllLinks(), $resource2->getAllLinks(), 'Links are not equal.');
 
-        $this->assertTrue($resource1->getAllEmbeddedResources() === $resource2->getAllEmbeddedResources(), 'Embedded resources are not equal.');
+        $this->assertEquals($resource1->getAllEmbeddedResources(), $resource2->getAllEmbeddedResources(), 'Embedded resources are not equal.');
 
-        $this->assertTrue($resource1 === $resource2, 'Resources are not equal.');
+        $this->assertEquals($resource1, $resource2, 'Resources are not equal.');
     }
 }

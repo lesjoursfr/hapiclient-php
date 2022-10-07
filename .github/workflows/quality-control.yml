@@ -38,3 +38,6 @@ jobs:
 
       - name: Show PHPCS results in PR
         run: cs2pr ./phpcs-report.xml
+
+      - name: PHPUnit tests
+        run: vendor/phpunit/phpunit/phpunit --bootstrap vendor/autoload.php tests

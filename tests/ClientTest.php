@@ -62,11 +62,11 @@ class ClientTest extends TestCase
         $follow1 = new Http\Follow($rel, 'GET', ['reference' => self::CREDITOR_REFERENCE]);
 
         $rel = new Hal\CustomRel(self::REL_NS.'get-mandates');
-        $follow2 = new Http\Follow($rel, 'GET', ['rum' => '1']);
+        $follow2 = new Http\Follow($rel, 'GET', ['reference' => 'SLMP040462818']);
 
         $mandate = $this->hapiClient->sendFollow([$follow1, $follow2]);
 
-        $this->assertEquals('1', $mandate->getState()['rum']);
+        $this->assertEquals('SLMP040462818', $mandate->getState()['reference']);
     }
 
     /**
