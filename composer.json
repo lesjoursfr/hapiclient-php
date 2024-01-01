@@ -25,12 +25,12 @@
 	],
 	"require": {
 		"php": "^7.4 || ^8.0",
-		"guzzlehttp/guzzle": "^7.8.0",
-		"guzzlehttp/uri-template": "^1.0.2"
+		"guzzlehttp/guzzle": "^7.8.1",
+		"guzzlehttp/uri-template": "^1.0.3"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "^10.5.0",
-		"squizlabs/php_codesniffer": "^3.7.2",
+		"phpunit/phpunit": "^10.5.5",
+		"squizlabs/php_codesniffer": "^3.8.0",
 		"escapestudios/symfony2-coding-standard": "^3.13.0"
 	},
 	"autoload": {
