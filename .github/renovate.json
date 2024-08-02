@@ -19,6 +19,11 @@
 			"automerge": true,
 			"automergeType": "pr",
 			"automergeStrategy": "squash"
+		},
+		{
+			"matchDatasources": ["github-tags"],
+			"matchPackageNames": ["containerbase/php-prebuild"],
+			"enabled": false
 		}
 	],
 	"ignorePaths": ["**/docs/**"]
