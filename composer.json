@@ -1,7 +1,6 @@
 {
 	"name": "lesjoursfr/hapiclient-php",
 	"type": "library",
-	"version": "2.0.1",
 	"description": "An HTTP Client using HAL as the format for resources.",
 	"keywords": [
 		"http",
