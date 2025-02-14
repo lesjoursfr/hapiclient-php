@@ -23,14 +23,14 @@ final class Oauth2BasicAuthentication implements AuthenticationMethodInterface
      * Basic authorization header composed of a
      * userid and a password.
      *
-     * @param string         $tokenEndPointUrl
-     * @param string         $userid
-     * @param string         $password
-     * @param string         $scope            (default to "api")
-     * @param string         $grantType        (default to "client_credentials")
-     * @param ExpirableToken $token            (optional)
+     * @param string              $tokenEndPointUrl
+     * @param string              $userid
+     * @param string              $password
+     * @param string              $scope            (default to "api")
+     * @param string              $grantType        (default to "client_credentials")
+     * @param ExpirableToken|null $token            (optional)
      */
-    public function __construct($tokenEndPointUrl, $userid, $password, $scope = 'api', $grantType = 'client_credentials', ExpirableToken $token = null)
+    public function __construct($tokenEndPointUrl, $userid, $password, $scope = 'api', $grantType = 'client_credentials', ?ExpirableToken $token = null)
     {
         $this->tokenEndPointUrl = $tokenEndPointUrl;
         $this->userid = $userid;

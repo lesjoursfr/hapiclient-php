@@ -26,13 +26,13 @@ final class HapiClient implements HapiClientInterface
     private $entryPointResource;
 
     /**
-     * @param string                        $apiUrl               The URL pointing to the API server
-     * @param string                        $entryPointUrl        The URL to the entry point Resource
-     * @param string                        $profile              The URL pointing to the HAL profile containing the resources and their descriptors.
-     *                                                            If specified, the client will send an Accept header with application/hal+json and a profile attribute containing the value set here.
-     * @param AuthenticationMethodInterface $authenticationMethod The authentication method
+     * @param string|null                        $apiUrl               The URL pointing to the API server
+     * @param string|null                        $entryPointUrl        The URL to the entry point Resource
+     * @param string|null                        $profile              The URL pointing to the HAL profile containing the resources and their descriptors.
+     *                                                                 If specified, the client will send an Accept header with application/hal+json and a profile attribute containing the value set here.
+     * @param AuthenticationMethodInterface|null $authenticationMethod The authentication method
      */
-    public function __construct($apiUrl = null, $entryPointUrl = '/', $profile = null, AuthenticationMethodInterface $authenticationMethod = null)
+    public function __construct(?string $apiUrl = null, ?string $entryPointUrl = '/', ?string $profile = null, ?AuthenticationMethodInterface $authenticationMethod = null)
     {
         $this->apiUrl = trim($apiUrl);
         $this->entryPointUrl = trim($entryPointUrl);
@@ -150,7 +150,7 @@ final class HapiClient implements HapiClientInterface
     /**
      * {@inheritDoc}
      */
-    public function sendFollow($follow, ResourceInterface $resource = null)
+    public function sendFollow($follow, ?ResourceInterface $resource = null)
     {
         if (!$resource) {
             $resource = $this->getEntryPointResource();

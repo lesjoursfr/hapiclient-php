@@ -13,12 +13,12 @@ abstract class AbstractRequest
     protected $headers;
 
     /**
-     * @param string              $method       GET, POST, PUT, PATCH or DELETE
-     * @param array               $urlVariables The value of the URL variables contained in the URL template
-     * @param AbstractMessageBody $messageBody  The messageBody to send with the request
-     * @param array               $headers      Optional headers
+     * @param string                   $method       GET, POST, PUT, PATCH or DELETE
+     * @param array|null               $urlVariables The value of the URL variables contained in the URL template
+     * @param AbstractMessageBody|null $messageBody  The messageBody to send with the request
+     * @param array|null               $headers      Optional headers
      */
-    protected function __construct($method = 'GET', array $urlVariables = null, AbstractMessageBody $messageBody = null, array $headers = null)
+    protected function __construct($method = 'GET', ?array $urlVariables = null, ?AbstractMessageBody $messageBody = null, ?array $headers = null)
     {
         $method = strtoupper(trim($method));
         if (!in_array($method, ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'])) {

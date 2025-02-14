@@ -1,5 +1,7 @@
 <?php
 
+// phpcs:disable Symfony.Commenting,PSR1.Classes.ClassDeclaration.MissingNamespace
+
 namespace HapiClient\Tests;
 
 use HapiClient\Exception;
@@ -8,7 +10,6 @@ use HapiClient\Http;
 use HapiClient\Http\Auth;
 use PHPUnit\Framework\TestCase;
 
-// phpcs:ignore Symfony.Commenting.ClassComment.Missing
 class ClientTest extends TestCase
 {
     public const APIURL = 'https://api.preprod.slimpay.com';
@@ -21,10 +22,7 @@ class ClientTest extends TestCase
 
     private $hapiClient;
 
-    /**
-     * @before
-     */
-    public function initClient()
+    protected function setUp(): void
     {
         $this->hapiClient = new Http\HapiClient(
             self::APIURL,
@@ -39,10 +37,7 @@ class ClientTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
-    public function oneFollowWithGet()
+    public function testOneFollowWithGet()
     {
         // Follow the get-creditors link
         $rel = new Hal\CustomRel(self::REL_NS.'get-creditors');
@@ -52,10 +47,7 @@ class ClientTest extends TestCase
         $this->assertEquals(self::CREDITOR_REFERENCE, $creditor->getState()['reference']);
     }
 
-    /**
-     * @test
-     */
-    public function twoFollowsWithGet()
+    public function testTwoFollowsWithGet()
     {
         // Follow the get-creditors then get-mandates links
         $rel = new Hal\CustomRel(self::REL_NS.'get-creditors');
@@ -69,10 +61,7 @@ class ClientTest extends TestCase
         $this->assertEquals('SLMP040462818', $mandate->getState()['reference']);
     }
 
-    /**
-     * @test
-     */
-    public function oneWrongFollowWithGet()
+    public function testOneWrongFollowWithGet()
     {
         // Follow the get-creditors link
         $rel = new Hal\CustomRel(self::REL_NS.'get-creditors');
@@ -86,10 +75,7 @@ class ClientTest extends TestCase
         }
     }
 
-    /**
-     * @test
-     */
-    public function refreshResource()
+    public function testRefreshResource()
     {
         // Follow the get-creditors link
         $rel = new Hal\CustomRel(self::REL_NS.'get-creditors');

@@ -31,11 +31,11 @@ final class Resource implements ResourceInterface
     /**
      * Create a new Resource.
      *
-     * @param array $state
-     * @param array $links
-     * @param array $embeddedResources
+     * @param array|null $state
+     * @param array|null $links
+     * @param array|null $embeddedResources
      */
-    public function __construct(array $state = null, array $links = null, array $embeddedResources = null)
+    public function __construct(?array $state = null, ?array $links = null, ?array $embeddedResources = null)
     {
         $this->state = (array) $state;
         $this->links = (array) $links;

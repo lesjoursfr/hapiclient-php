@@ -12,13 +12,13 @@ final class Follow extends AbstractRequest implements FollowInterface
     private $rel;
 
     /**
-     * @param Rel                 $rel          The relation type
-     * @param string              $method       GET, POST, PUT, PATCH or DELETE
-     * @param array               $urlVariables The value of the URL variables contained in the URL template
-     * @param AbstractMessageBody $messageBody  The messageBody to send with the request
-     * @param array               $headers      Optional headers
+     * @param Rel                      $rel          The relation type
+     * @param string                   $method       GET, POST, PUT, PATCH or DELETE
+     * @param array|null               $urlVariables The value of the URL variables contained in the URL template
+     * @param AbstractMessageBody|null $messageBody  The messageBody to send with the request
+     * @param array|null               $headers      Optional headers
      */
-    public function __construct($rel, $method = 'GET', array $urlVariables = null, AbstractMessageBody $messageBody = null, array $headers = null)
+    public function __construct($rel, $method = 'GET', ?array $urlVariables = null, ?AbstractMessageBody $messageBody = null, ?array $headers = null)
     {
         parent::__construct($method, $urlVariables, $messageBody, $headers);
         $this->rel = $rel;

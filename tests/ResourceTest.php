@@ -1,11 +1,12 @@
 <?php
 
+// phpcs:disable Symfony.Commenting,PSR1.Classes.ClassDeclaration.MissingNamespace
+
 namespace HapiClient\tests;
 
 use HapiClient\Hal;
 use PHPUnit\Framework\TestCase;
 
-// phpcs:ignore Symfony.Commenting.ClassComment.Missing
 class ResourceTest extends TestCase
 {
     public const JSON_REPRESENTATION = <<<END
@@ -55,10 +56,8 @@ END;
      * - links
      * - embedded resources
      * - links in embedded resources.
-     *
-     * @test
      */
-    public function parseJsonRepresentation()
+    public function testParseJsonRepresentation()
     {
         $resource = Hal\Resource::fromJson(self::JSON_REPRESENTATION);
 
@@ -96,10 +95,7 @@ END;
         $this->assertEquals(0, count($order1->getAllEmbeddedResources()));
     }
 
-    /**
-     * @test
-     */
-    public function equalResources()
+    public function testEqualResources()
     {
         $resource1 = Hal\Resource::fromJson(self::JSON_REPRESENTATION);
         $resource2 = Hal\Resource::fromJson(self::JSON_REPRESENTATION);

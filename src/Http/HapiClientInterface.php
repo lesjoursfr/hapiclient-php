@@ -51,7 +51,7 @@ interface HapiClientInterface
      *
      * @return ResourceInterface the Resource object contained in the last response
      */
-    public function sendFollow($follow, ResourceInterface $resource = null);
+    public function sendFollow($follow, ?ResourceInterface $resource = null);
 
     /**
      * Sends a request to the API entry point URL ("/" by default)

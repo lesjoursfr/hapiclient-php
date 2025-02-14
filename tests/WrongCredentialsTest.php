@@ -1,5 +1,7 @@
 <?php
 
+// phpcs:disable Symfony.Commenting,PSR1.Classes.ClassDeclaration.MissingNamespace
+
 namespace HapiClient\tests;
 
 use HapiClient\Exception;
@@ -7,7 +9,6 @@ use HapiClient\Http;
 use HapiClient\Http\Auth;
 use PHPUnit\Framework\TestCase;
 
-// phpcs:ignore Symfony.Commenting.ClassComment.Missing
 class WrongCredentialsTest extends TestCase
 {
     public const APIURL = 'https://api.preprod.slimpay.com';
@@ -18,10 +19,7 @@ class WrongCredentialsTest extends TestCase
 
     private $hapiClient;
 
-    /**
-     * @before
-     */
-    public function initClient()
+    protected function setUp(): void
     {
         $this->hapiClient = new Http\HapiClient(
             self::APIURL,
@@ -36,10 +34,7 @@ class WrongCredentialsTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
-    public function test()
+    public function testWrongCredentials()
     {
         try {
             $this->hapiClient->getEntryPointResource();
