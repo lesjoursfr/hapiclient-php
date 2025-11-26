@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6
 
       - name: Use PHP 8.3
         uses: shivammathur/setup-php@7bf05c6b704e0b9bfee22300130a31b5ea68d593 # 2.36.0
@@ -49,7 +49,7 @@ jobs:
         php-version: [8.3, 8.4]
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6
 
       - name: Use PHP ${{ matrix.php-version }}
         uses: shivammathur/setup-php@7bf05c6b704e0b9bfee22300130a31b5ea68d593 # 2.36.0
