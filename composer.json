@@ -24,11 +24,11 @@
 	],
 	"require": {
 		"php": "^8.4",
-		"guzzlehttp/guzzle": "^7.10.5",
-		"guzzlehttp/uri-template": "^1.0.6"
+		"guzzlehttp/guzzle": "^7.11.1",
+		"guzzlehttp/uri-template": "^1.0.7"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "^13.1.13",
+		"phpunit/phpunit": "^13.2.0",
 		"squizlabs/php_codesniffer": "^4.0.1",
 		"escapestudios/symfony2-coding-standard": "^3.18.0"
 	},
