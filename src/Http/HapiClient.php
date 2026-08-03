@@ -219,7 +219,7 @@ final class HapiClient implements HapiClientInterface
 
         // Handle templated URLs
         if ($urlVariables = $request->getUrlVariables()) {
-            $url = (new UriTemplate())->expand($url, $urlVariables);
+            $url = UriTemplate::expand($url, $urlVariables);
         }
 
         // Headers
