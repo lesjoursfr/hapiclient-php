@@ -25,7 +25,7 @@
 	"require": {
 		"php": "^8.4",
 		"guzzlehttp/guzzle": "^8.0.1",
-		"guzzlehttp/uri-template": "^1.0.10"
+		"guzzlehttp/uri-template": "^2.0.0"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "^13.2.5",
