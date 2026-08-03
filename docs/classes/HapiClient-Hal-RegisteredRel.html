@@ -6,11 +6,14 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
     <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +22,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,8 +56,8 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/hapiclient.html" class="">HapiClient</a>
@@ -78,7 +82,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -86,21 +90,22 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hapiclient.html">HapiClient</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hapiclient-hal.html">Hal</a></li>
     </ul>
@@ -120,6 +125,13 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Hal/RegisteredRel.php"><a href="files/src-hal-registeredrel.html"><abbr title="src/Hal/RegisteredRel.php">RegisteredRel.php</abbr></a></abbr>
     :
@@ -135,28 +147,38 @@ Last updated: 2015-01-21.</p>
 
 
 
-
-
-
-
+    
+    
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/HapiClient-Hal-RegisteredRel.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/HapiClient-Hal-RegisteredRel.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ABOUT">ABOUT</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_ABOUT">ABOUT</a>
     <span>
-        &nbsp;= &#039;about&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;about&#039;                            </span>
 </dt>
 <dd>Relation Name: about
 Description: Refers to a resource that is the subject of the link&#039;s context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ALTERNATE">ALTERNATE</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_ALTERNATE">ALTERNATE</a>
     <span>
-        &nbsp;= &#039;alternate&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;alternate&#039;                            </span>
 </dt>
 <dd>Relation Name: alternate
 Description: Refers to a substitute for this context
@@ -164,574 +186,583 @@ Reference: [http://www.w3.org/TR/html5/links.html#link-type-alternate]
 Notes:.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_APPENDIX">APPENDIX</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_APPENDIX">APPENDIX</a>
     <span>
-        &nbsp;= &#039;appendix&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;appendix&#039;                            </span>
 </dt>
 <dd>Relation Name: appendix
 Description: Refers to an appendix.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ARCHIVES">ARCHIVES</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_ARCHIVES">ARCHIVES</a>
     <span>
-        &nbsp;= &#039;archives&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;archives&#039;                            </span>
 </dt>
 <dd>Relation Name: archives
 Description: Refers to a collection of records, documents, or other materials of historical interest.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_AUTHOR">AUTHOR</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_AUTHOR">AUTHOR</a>
     <span>
-        &nbsp;= &#039;author&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;author&#039;                            </span>
 </dt>
 <dd>Relation Name: author
 Description: Refers to the context&#039;s author.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_BOOKMARK">BOOKMARK</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_BOOKMARK">BOOKMARK</a>
     <span>
-        &nbsp;= &#039;bookmark&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;bookmark&#039;                            </span>
 </dt>
 <dd>Relation Name: bookmark
 Description: Gives a permanent link to use for bookmarking purposes.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CANONICAL">CANONICAL</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_CANONICAL">CANONICAL</a>
     <span>
-        &nbsp;= &#039;canonical&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;canonical&#039;                            </span>
 </dt>
 <dd>Relation Name: canonical
 Description: Designates the preferred version of a resource (the IRI and its contents).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CHAPTER">CHAPTER</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_CHAPTER">CHAPTER</a>
     <span>
-        &nbsp;= &#039;chapter&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;chapter&#039;                            </span>
 </dt>
 <dd>Relation Name: chapter
 Description: Refers to a chapter in a collection of resources.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_COLLECTION">COLLECTION</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_COLLECTION">COLLECTION</a>
     <span>
-        &nbsp;= &#039;collection&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;collection&#039;                            </span>
 </dt>
 <dd>Relation Name: collection
 Description: The target IRI points to a resource which represents the collection resource for the context IRI.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CONTENTS">CONTENTS</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_CONTENTS">CONTENTS</a>
     <span>
-        &nbsp;= &#039;contents&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;contents&#039;                            </span>
 </dt>
 <dd>Relation Name: contents
 Description: Refers to a table of contents.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_COPYRIGHT">COPYRIGHT</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_COPYRIGHT">COPYRIGHT</a>
     <span>
-        &nbsp;= &#039;copyright&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;copyright&#039;                            </span>
 </dt>
 <dd>Relation Name: copyright
 Description: Refers to a copyright statement that applies to the link&#039;s context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CREATEFORM">CREATEFORM</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_CREATEFORM">CREATEFORM</a>
     <span>
-        &nbsp;= &#039;create-form&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;create-form&#039;                            </span>
 </dt>
 <dd>Relation Name: create-form
 Description: The target IRI points to a resource where a submission form can be obtained.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CURIES">CURIES</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_CURIES">CURIES</a>
     <span>
-        &nbsp;= &#039;curies&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;curies&#039;                            </span>
 </dt>
 <dd>Not part of the IANA Registry but a reserved
 relation type in the HAL Specification for
 the CURIE syntax.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CURRENT">CURRENT</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_CURRENT">CURRENT</a>
     <span>
-        &nbsp;= &#039;current&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;current&#039;                            </span>
 </dt>
 <dd>Relation Name: current
 Description: Refers to a resource containing the most recent item(s) in a collection of resources.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DERIVEDFROM">DERIVEDFROM</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_DERIVEDFROM">DERIVEDFROM</a>
     <span>
-        &nbsp;= &#039;derivedfrom&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;derivedfrom&#039;                            </span>
 </dt>
 <dd>Relation Name: derivedfrom
 Description: The target IRI points to a resource from which this material was derived.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DESCRIBEDBY">DESCRIBEDBY</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_DESCRIBEDBY">DESCRIBEDBY</a>
     <span>
-        &nbsp;= &#039;describedby&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;describedby&#039;                            </span>
 </dt>
 <dd>Relation Name: describedby
 Description: Refers to a resource providing information about the link&#039;s context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DESCRIBES">DESCRIBES</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_DESCRIBES">DESCRIBES</a>
     <span>
-        &nbsp;= &#039;describes&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;describes&#039;                            </span>
 </dt>
 <dd>Relation Name: describes
 Description: The relationship A &#039;describes&#039; B asserts that resource A provides a description of resource B.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DISCLOSURE">DISCLOSURE</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_DISCLOSURE">DISCLOSURE</a>
     <span>
-        &nbsp;= &#039;disclosure&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;disclosure&#039;                            </span>
 </dt>
 <dd>Relation Name: disclosure
 Description: Refers to a list of patent disclosures made with respect to material for which &#039;disclosure&#039; relation is specified.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DUPLICATE">DUPLICATE</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_DUPLICATE">DUPLICATE</a>
     <span>
-        &nbsp;= &#039;duplicate&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;duplicate&#039;                            </span>
 </dt>
 <dd>Relation Name: duplicate
 Description: Refers to a resource whose available representations are byte-for-byte identical with the corresponding representations of the context IRI.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_EDIT">EDIT</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_EDIT">EDIT</a>
     <span>
-        &nbsp;= &#039;edit&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;edit&#039;                            </span>
 </dt>
 <dd>Relation Name: edit
 Description: Refers to a resource that can be used to edit the link&#039;s context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_EDITFORM">EDITFORM</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_EDITFORM">EDITFORM</a>
     <span>
-        &nbsp;= &#039;edit-form&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;edit-form&#039;                            </span>
 </dt>
 <dd>Relation Name: edit-form
 Description: The target IRI points to a resource where a submission form for editing associated resource can be obtained.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_EDITMEDIA">EDITMEDIA</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_EDITMEDIA">EDITMEDIA</a>
     <span>
-        &nbsp;= &#039;edit-media&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;edit-media&#039;                            </span>
 </dt>
 <dd>Relation Name: edit-media
 Description: Refers to a resource that can be used to edit media associated with the link&#039;s context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ENCLOSURE">ENCLOSURE</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_ENCLOSURE">ENCLOSURE</a>
     <span>
-        &nbsp;= &#039;enclosure&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;enclosure&#039;                            </span>
 </dt>
 <dd>Relation Name: enclosure
 Description: Identifies a related resource that is potentially large and might require special handling.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_FIRST">FIRST</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_FIRST">FIRST</a>
     <span>
-        &nbsp;= &#039;first&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;first&#039;                            </span>
 </dt>
 <dd>Relation Name: first
 Description: An IRI that refers to the furthest preceding resource in a series of resources.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_GLOSSARY">GLOSSARY</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_GLOSSARY">GLOSSARY</a>
     <span>
-        &nbsp;= &#039;glossary&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;glossary&#039;                            </span>
 </dt>
 <dd>Relation Name: glossary
 Description: Refers to a glossary of terms.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_HELP">HELP</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_HELP">HELP</a>
     <span>
-        &nbsp;= &#039;help&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;help&#039;                            </span>
 </dt>
 <dd>Relation Name: help
 Description: Refers to context-sensitive help.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_HOSTS">HOSTS</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_HOSTS">HOSTS</a>
     <span>
-        &nbsp;= &#039;hosts&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;hosts&#039;                            </span>
 </dt>
 <dd>Relation Name: hosts
 Description: Refers to a resource hosted by the server indicated by the link context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_HUB">HUB</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_HUB">HUB</a>
     <span>
-        &nbsp;= &#039;hub&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;hub&#039;                            </span>
 </dt>
 <dd>Relation Name: hub
 Description: Refers to a hub that enables registration for notification of updates to the context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ICON">ICON</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_ICON">ICON</a>
     <span>
-        &nbsp;= &#039;icon&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;icon&#039;                            </span>
 </dt>
 <dd>Relation Name: icon
 Description: Refers to an icon representing the link&#039;s context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_INDEX">INDEX</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_INDEX">INDEX</a>
     <span>
-        &nbsp;= &#039;index&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;index&#039;                            </span>
 </dt>
 <dd>Relation Name: index
 Description: Refers to an index.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ITEM">ITEM</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_ITEM">ITEM</a>
     <span>
-        &nbsp;= &#039;item&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;item&#039;                            </span>
 </dt>
 <dd>Relation Name: item
 Description: The target IRI points to a resource that is a member of the collection represented by the context IRI.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_LAST">LAST</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_LAST">LAST</a>
     <span>
-        &nbsp;= &#039;last&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;last&#039;                            </span>
 </dt>
 <dd>Relation Name: last
 Description: An IRI that refers to the furthest following resource in a series of resources.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_LATESTVERSION">LATESTVERSION</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_LATESTVERSION">LATESTVERSION</a>
     <span>
-        &nbsp;= &#039;latest-version&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;latest-version&#039;                            </span>
 </dt>
 <dd>Relation Name: latest-version
 Description: Points to a resource containing the latest (e.g., current) version of the context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_LICENSE">LICENSE</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_LICENSE">LICENSE</a>
     <span>
-        &nbsp;= &#039;license&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;license&#039;                            </span>
 </dt>
 <dd>Relation Name: license
 Description: Refers to a license associated with this context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_LRDD">LRDD</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_LRDD">LRDD</a>
     <span>
-        &nbsp;= &#039;lrdd&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;lrdd&#039;                            </span>
 </dt>
 <dd>Relation Name: lrdd
 Description: Refers to further information about the link&#039;s context, expressed as a LRDD (&quot;&quot;Link-based Resource Descriptor Document&quot;&quot;) resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_MEMENTO">MEMENTO</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_MEMENTO">MEMENTO</a>
     <span>
-        &nbsp;= &#039;memento&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;memento&#039;                            </span>
 </dt>
 <dd>Relation Name: memento
 Description: The Target IRI points to a Memento, a fixed resource that will not change state anymore.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_MONITOR">MONITOR</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_MONITOR">MONITOR</a>
     <span>
-        &nbsp;= &#039;monitor&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;monitor&#039;                            </span>
 </dt>
 <dd>Relation Name: monitor
 Description: Refers to a resource that can be used to monitor changes in an HTTP resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_MONITORGROUP">MONITORGROUP</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_MONITORGROUP">MONITORGROUP</a>
     <span>
-        &nbsp;= &#039;monitor-group&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;monitor-group&#039;                            </span>
 </dt>
 <dd>Relation Name: monitor-group
 Description: Refers to a resource that can be used to monitor changes in a specified group of HTTP resources.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_NEXT">NEXT</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_NEXT">NEXT</a>
     <span>
-        &nbsp;= &#039;next&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;next&#039;                            </span>
 </dt>
 <dd>Relation Name: next
 Description: Indicates that the link&#039;s context is a part of a series, and that the next in the series is the link target.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_NEXTARCHIVE">NEXTARCHIVE</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_NEXTARCHIVE">NEXTARCHIVE</a>
     <span>
-        &nbsp;= &#039;next-archive&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;next-archive&#039;                            </span>
 </dt>
 <dd>Relation Name: next-archive
 Description: Refers to the immediately following archive resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_NOFOLLOW">NOFOLLOW</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_NOFOLLOW">NOFOLLOW</a>
     <span>
-        &nbsp;= &#039;nofollow&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;nofollow&#039;                            </span>
 </dt>
 <dd>Relation Name: nofollow
 Description: Indicates that the context�s original author or publisher does not endorse the link target.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_NOREFERRER">NOREFERRER</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_NOREFERRER">NOREFERRER</a>
     <span>
-        &nbsp;= &#039;noreferrer&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;noreferrer&#039;                            </span>
 </dt>
 <dd>Relation Name: noreferrer
 Description: Indicates that no referrer information is to be leaked when following the link.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ORIGINAL">ORIGINAL</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_ORIGINAL">ORIGINAL</a>
     <span>
-        &nbsp;= &#039;original&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;original&#039;                            </span>
 </dt>
 <dd>Relation Name: original
 Description: The Target IRI points to an Original Resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PAYMENT">PAYMENT</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_PAYMENT">PAYMENT</a>
     <span>
-        &nbsp;= &#039;payment&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;payment&#039;                            </span>
 </dt>
 <dd>Relation Name: payment
 Description: Indicates a resource where payment is accepted.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREDECESSORVERSION">PREDECESSORVERSION</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREDECESSORVERSION">PREDECESSORVERSION</a>
     <span>
-        &nbsp;= &#039;predecessor-version&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;predecessor-version&#039;                            </span>
 </dt>
 <dd>Relation Name: predecessor-version
 Description: Points to a resource containing the predecessor version in the version history.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREFETCH">PREFETCH</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREFETCH">PREFETCH</a>
     <span>
-        &nbsp;= &#039;prefetch&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;prefetch&#039;                            </span>
 </dt>
 <dd>Relation Name: prefetch
 Description: Indicates that the link target should be preemptively cached.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREV">PREV</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREV">PREV</a>
     <span>
-        &nbsp;= &#039;prev&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;prev&#039;                            </span>
 </dt>
 <dd>Relation Name: prev
 Description: Indicates that the link&#039;s context is a part of a series, and that the previous in the series is the link target.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREVARCHIVE">PREVARCHIVE</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREVARCHIVE">PREVARCHIVE</a>
     <span>
-        &nbsp;= &#039;prev-archive&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;prev-archive&#039;                            </span>
 </dt>
 <dd>Relation Name: prev-archive
 Description: Refers to the immediately preceding archive resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREVIEW">PREVIEW</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREVIEW">PREVIEW</a>
     <span>
-        &nbsp;= &#039;preview&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;preview&#039;                            </span>
 </dt>
 <dd>Relation Name: preview
 Description: Refers to a resource that provides a preview of the link&#039;s context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREVIOUS">PREVIOUS</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREVIOUS">PREVIOUS</a>
     <span>
-        &nbsp;= &#039;previous&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;previous&#039;                            </span>
 </dt>
 <dd>Relation Name: previous
 Description: Refers to the previous resource in an ordered series of resources.  Synonym for &quot;&quot;prev&quot;&quot;.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PRIVACYPOLICY">PRIVACYPOLICY</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_PRIVACYPOLICY">PRIVACYPOLICY</a>
     <span>
-        &nbsp;= &#039;privacy-policy&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;privacy-policy&#039;                            </span>
 </dt>
 <dd>Relation Name: privacy-policy
 Description: Refers to a privacy policy associated with the link&#039;s context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PROFILE">PROFILE</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_PROFILE">PROFILE</a>
     <span>
-        &nbsp;= &#039;profile&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;profile&#039;                            </span>
 </dt>
 <dd>Relation Name: profile
 Description: Identifying that a resource representation conforms. of the resource representation.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_RELATED">RELATED</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_RELATED">RELATED</a>
     <span>
-        &nbsp;= &#039;related&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;related&#039;                            </span>
 </dt>
 <dd>Relation Name: related
 Description: Identifies a related resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_REPLIES">REPLIES</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_REPLIES">REPLIES</a>
     <span>
-        &nbsp;= &#039;replies&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;replies&#039;                            </span>
 </dt>
 <dd>Relation Name: replies
 Description: Identifies a resource that is a reply to the context of the link.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SEARCH">SEARCH</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_SEARCH">SEARCH</a>
     <span>
-        &nbsp;= &#039;search&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;search&#039;                            </span>
 </dt>
 <dd>Relation Name: search
 Description: Refers to a resource that can be used to search through the link&#039;s context and related resources.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SECTION">SECTION</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_SECTION">SECTION</a>
     <span>
-        &nbsp;= &#039;section&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;section&#039;                            </span>
 </dt>
 <dd>Relation Name: section
 Description: Refers to a section in a collection of resources.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SELF">SELF</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_SELF">SELF</a>
     <span>
-        &nbsp;= &#039;self&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;self&#039;                            </span>
 </dt>
 <dd>Relation Name: self
 Description: Conveys an identifier for the link&#039;s context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SERVICE">SERVICE</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_SERVICE">SERVICE</a>
     <span>
-        &nbsp;= &#039;service&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;service&#039;                            </span>
 </dt>
 <dd>Relation Name: service
 Description: Indicates a URI that can be used to retrieve a service document.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_START">START</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_START">START</a>
     <span>
-        &nbsp;= &#039;start&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;start&#039;                            </span>
 </dt>
 <dd>Relation Name: start
 Description: Refers to the first resource in a collection of resources.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_STYLESHEET">STYLESHEET</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_STYLESHEET">STYLESHEET</a>
     <span>
-        &nbsp;= &#039;stylesheet&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;stylesheet&#039;                            </span>
 </dt>
 <dd>Relation Name: stylesheet
 Description: Refers to a stylesheet.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SUBSECTION">SUBSECTION</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_SUBSECTION">SUBSECTION</a>
     <span>
-        &nbsp;= &#039;subsection&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;subsection&#039;                            </span>
 </dt>
 <dd>Relation Name: subsection
 Description: Refers to a resource serving as a subsection in a collection of resources.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SUCCESSORVERSION">SUCCESSORVERSION</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_SUCCESSORVERSION">SUCCESSORVERSION</a>
     <span>
-        &nbsp;= &#039;successor-version&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;successor-version&#039;                            </span>
 </dt>
 <dd>Relation Name: successor-version
 Description: Points to a resource containing the successor version in the version history.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TAG">TAG</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_TAG">TAG</a>
     <span>
-        &nbsp;= &#039;tag&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;tag&#039;                            </span>
 </dt>
 <dd>Relation Name: tag
 Description: Gives a tag (identified by the given address) that applies to the current document.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TERMSOFSERVICE">TERMSOFSERVICE</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_TERMSOFSERVICE">TERMSOFSERVICE</a>
     <span>
-        &nbsp;= &#039;terms-of-service&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;terms-of-service&#039;                            </span>
 </dt>
 <dd>Relation Name: terms-of-service
 Description: Refers to the terms of service associated with the link&#039;s context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TIMEGATE">TIMEGATE</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_TIMEGATE">TIMEGATE</a>
     <span>
-        &nbsp;= &#039;timegate&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;timegate&#039;                            </span>
 </dt>
 <dd>Relation Name: timegate
 Description: The Target IRI points to a TimeGate for an Original Resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TIMEMAP">TIMEMAP</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_TIMEMAP">TIMEMAP</a>
     <span>
-        &nbsp;= &#039;timemap&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;timemap&#039;                            </span>
 </dt>
 <dd>Relation Name: timemap
 Description: The Target IRI points to a TimeMap for an Original Resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TYPE">TYPE</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_TYPE">TYPE</a>
     <span>
-        &nbsp;= &#039;type&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;type&#039;                            </span>
 </dt>
 <dd>Relation Name: type
 Description: Refers to a resource identifying the abstract semantic type of which the link&#039;s context is considered to be an instance.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_UP">UP</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_UP">UP</a>
     <span>
-        &nbsp;= &#039;up&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;up&#039;                            </span>
 </dt>
 <dd>Relation Name: up
 Description: Refers to a parent document in a hierarchy of documents.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_VERSIONHISTORY">VERSIONHISTORY</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_VERSIONHISTORY">VERSIONHISTORY</a>
     <span>
-        &nbsp;= &#039;version-history&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;version-history&#039;                            </span>
 </dt>
 <dd>Relation Name: version-history
 Description: Points to a resource containing the version history for the context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_VIA">VIA</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_VIA">VIA</a>
     <span>
-        &nbsp;= &#039;via&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;via&#039;                            </span>
 </dt>
 <dd>Relation Name: via
 Description: Identifies a resource that is the source of the information in the link&#039;s context.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_WORKINGCOPY">WORKINGCOPY</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_WORKINGCOPY">WORKINGCOPY</a>
     <span>
-        &nbsp;= &#039;working-copy&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;working-copy&#039;                            </span>
 </dt>
 <dd>Relation Name: working-copy
 Description: Points to a working copy for this resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_WORKINGCOPYOF">WORKINGCOPYOF</a>
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#constant_WORKINGCOPYOF">WORKINGCOPYOF</a>
     <span>
-        &nbsp;= &#039;working-copy-of&#039;                            </span>
+        &nbsp;: mixed&nbsp;= &#039;working-copy-of&#039;                            </span>
 </dt>
 <dd>Relation Name: working-copy-of
 Description: Points to the versioned resource from which this working copy was obtained.</dd>
 
-                        <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/HapiClient-Hal-RegisteredRel.html#method___construct">__construct()</a>
+    </dl>
+
+
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/HapiClient-Hal-RegisteredRel.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/HapiClient-Hal-RegisteredRel.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
-        </dl>
+    </dl>
 
 
 
@@ -740,11 +771,13 @@ Description: Points to the versioned resource from which this working copy was o
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
             <a href="classes/HapiClient-Hal-RegisteredRel.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_ABOUT">
         ABOUT
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ABOUT" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -757,6 +790,7 @@ Description: Points to the versioned resource from which this working copy was o
         <p class="phpdocumentor-summary">Relation Name: about
 Description: Refers to a resource that is the subject of the link&#039;s context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -769,15 +803,16 @@ Description: Refers to a resource that is the subject of the link&#039;s context
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_ALTERNATE">
         ALTERNATE
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ALTERNATE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -792,6 +827,7 @@ Description: Refers to a substitute for this context
 Reference: [http://www.w3.org/TR/html5/links.html#link-type-alternate]
 Notes:.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -801,15 +837,16 @@ Notes:.</p>
 
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_APPENDIX">
         APPENDIX
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_APPENDIX" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -822,6 +859,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: appendix
 Description: Refers to an appendix.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -834,15 +872,16 @@ Description: Refers to an appendix.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_ARCHIVES">
         ARCHIVES
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ARCHIVES" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -855,6 +894,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: archives
 Description: Refers to a collection of records, documents, or other materials of historical interest.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -867,15 +907,16 @@ Description: Refers to a collection of records, documents, or other materials of
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_AUTHOR">
         AUTHOR
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_AUTHOR" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -888,6 +929,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: author
 Description: Refers to the context&#039;s author.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -900,15 +942,16 @@ Description: Refers to the context&#039;s author.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_BOOKMARK">
         BOOKMARK
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_BOOKMARK" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -921,6 +964,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: bookmark
 Description: Gives a permanent link to use for bookmarking purposes.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -933,15 +977,16 @@ Description: Gives a permanent link to use for bookmarking purposes.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_CANONICAL">
         CANONICAL
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CANONICAL" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -954,6 +999,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: canonical
 Description: Designates the preferred version of a resource (the IRI and its contents).</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -966,15 +1012,16 @@ Description: Designates the preferred version of a resource (the IRI and its con
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_CHAPTER">
         CHAPTER
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CHAPTER" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -987,6 +1034,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: chapter
 Description: Refers to a chapter in a collection of resources.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -999,15 +1047,16 @@ Description: Refers to a chapter in a collection of resources.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_COLLECTION">
         COLLECTION
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_COLLECTION" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1020,6 +1069,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: collection
 Description: The target IRI points to a resource which represents the collection resource for the context IRI.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1032,15 +1082,16 @@ Description: The target IRI points to a resource which represents the collection
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_CONTENTS">
         CONTENTS
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CONTENTS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1053,6 +1104,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: contents
 Description: Refers to a table of contents.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1065,15 +1117,16 @@ Description: Refers to a table of contents.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_COPYRIGHT">
         COPYRIGHT
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_COPYRIGHT" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1086,6 +1139,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: copyright
 Description: Refers to a copyright statement that applies to the link&#039;s context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1098,15 +1152,16 @@ Description: Refers to a copyright statement that applies to the link&#039;s con
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_CREATEFORM">
         CREATEFORM
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CREATEFORM" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1119,6 +1174,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: create-form
 Description: The target IRI points to a resource where a submission form can be obtained.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1131,15 +1187,16 @@ Description: The target IRI points to a resource where a submission form can be 
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_CURIES">
         CURIES
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CURIES" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1153,6 +1210,7 @@ Notes:.</p>
 relation type in the HAL Specification for
 the CURIE syntax.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1162,15 +1220,16 @@ the CURIE syntax.</p>
 
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_CURRENT">
         CURRENT
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CURRENT" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1183,6 +1242,7 @@ the CURIE syntax.</p>
         <p class="phpdocumentor-summary">Relation Name: current
 Description: Refers to a resource containing the most recent item(s) in a collection of resources.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1195,15 +1255,16 @@ Description: Refers to a resource containing the most recent item(s) in a collec
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_DERIVEDFROM">
         DERIVEDFROM
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DERIVEDFROM" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1216,6 +1277,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: derivedfrom
 Description: The target IRI points to a resource from which this material was derived.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1228,15 +1290,16 @@ Description: The target IRI points to a resource from which this material was de
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_DESCRIBEDBY">
         DESCRIBEDBY
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DESCRIBEDBY" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1249,6 +1312,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: describedby
 Description: Refers to a resource providing information about the link&#039;s context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1261,15 +1325,16 @@ Description: Refers to a resource providing information about the link&#039;s co
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_DESCRIBES">
         DESCRIBES
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DESCRIBES" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1282,6 +1347,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: describes
 Description: The relationship A &#039;describes&#039; B asserts that resource A provides a description of resource B.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1297,15 +1363,16 @@ While 'describedby' establishes a relation from the described resource back to t
 If B is 'describedby' A, then A 'describes' B.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_DISCLOSURE">
         DISCLOSURE
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DISCLOSURE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1318,6 +1385,7 @@ If B is 'describedby' A, then A 'describes' B.</p>
         <p class="phpdocumentor-summary">Relation Name: disclosure
 Description: Refers to a list of patent disclosures made with respect to material for which &#039;disclosure&#039; relation is specified.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1330,15 +1398,16 @@ Description: Refers to a list of patent disclosures made with respect to materia
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_DUPLICATE">
         DUPLICATE
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DUPLICATE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1351,6 +1420,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: duplicate
 Description: Refers to a resource whose available representations are byte-for-byte identical with the corresponding representations of the context IRI.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1363,15 +1433,16 @@ Description: Refers to a resource whose available representations are byte-for-b
 Notes: This relation is for static resources.  That is, an HTTP GET request on any duplicate will return the same representation.  It does not make sense for dynamic or POSTable resources and should not be used for them.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_EDIT">
         EDIT
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_EDIT" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1384,6 +1455,7 @@ Notes: This relation is for static resources.  That is, an HTTP GET request on a
         <p class="phpdocumentor-summary">Relation Name: edit
 Description: Refers to a resource that can be used to edit the link&#039;s context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1396,15 +1468,16 @@ Description: Refers to a resource that can be used to edit the link&#039;s conte
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_EDITFORM">
         EDITFORM
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_EDITFORM" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1417,6 +1490,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: edit-form
 Description: The target IRI points to a resource where a submission form for editing associated resource can be obtained.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1429,15 +1503,16 @@ Description: The target IRI points to a resource where a submission form for edi
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_EDITMEDIA">
         EDITMEDIA
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_EDITMEDIA" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1450,6 +1525,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: edit-media
 Description: Refers to a resource that can be used to edit media associated with the link&#039;s context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1462,15 +1538,16 @@ Description: Refers to a resource that can be used to edit media associated with
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_ENCLOSURE">
         ENCLOSURE
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ENCLOSURE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1483,6 +1560,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: enclosure
 Description: Identifies a related resource that is potentially large and might require special handling.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1495,15 +1573,16 @@ Description: Identifies a related resource that is potentially large and might r
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_FIRST">
         FIRST
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_FIRST" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1516,6 +1595,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: first
 Description: An IRI that refers to the furthest preceding resource in a series of resources.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1528,15 +1608,16 @@ Description: An IRI that refers to the furthest preceding resource in a series o
 Notes: This relation type registration did not indicate a reference.  Originally requested by Mark Nottingham in December 2004.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_GLOSSARY">
         GLOSSARY
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_GLOSSARY" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1549,6 +1630,7 @@ Notes: This relation type registration did not indicate a reference.  Originally
         <p class="phpdocumentor-summary">Relation Name: glossary
 Description: Refers to a glossary of terms.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1561,15 +1643,16 @@ Description: Refers to a glossary of terms.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_HELP">
         HELP
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_HELP" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1582,6 +1665,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: help
 Description: Refers to context-sensitive help.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1594,15 +1678,16 @@ Description: Refers to context-sensitive help.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_HOSTS">
         HOSTS
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_HOSTS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1615,6 +1700,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: hosts
 Description: Refers to a resource hosted by the server indicated by the link context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1627,15 +1713,16 @@ Description: Refers to a resource hosted by the server indicated by the link con
 Notes: This relation is used in CoRE where links are retrieved as a &quot;&quot;/.well-known/core&quot;&quot; resource representation, and is the default relation type in the CoRE Link Format.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_HUB">
         HUB
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_HUB" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1648,6 +1735,7 @@ Notes: This relation is used in CoRE where links are retrieved as a &quot;&quot;
         <p class="phpdocumentor-summary">Relation Name: hub
 Description: Refers to a hub that enables registration for notification of updates to the context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1660,15 +1748,16 @@ Description: Refers to a hub that enables registration for notification of updat
 Notes: This relation type was requested by Brett Slatkin.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_ICON">
         ICON
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ICON" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1681,6 +1770,7 @@ Notes: This relation type was requested by Brett Slatkin.</p>
         <p class="phpdocumentor-summary">Relation Name: icon
 Description: Refers to an icon representing the link&#039;s context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1693,15 +1783,16 @@ Description: Refers to an icon representing the link&#039;s context.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_INDEX">
         INDEX
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_INDEX" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1714,6 +1805,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: index
 Description: Refers to an index.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1726,15 +1818,16 @@ Description: Refers to an index.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_ITEM">
         ITEM
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ITEM" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1747,6 +1840,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: item
 Description: The target IRI points to a resource that is a member of the collection represented by the context IRI.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1759,15 +1853,16 @@ Description: The target IRI points to a resource that is a member of the collect
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_LAST">
         LAST
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_LAST" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1780,6 +1875,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: last
 Description: An IRI that refers to the furthest following resource in a series of resources.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1792,15 +1888,16 @@ Description: An IRI that refers to the furthest following resource in a series o
 Notes: This relation type registration did not indicate a reference. Originally requested by Mark Nottingham in December 2004.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_LATESTVERSION">
         LATESTVERSION
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_LATESTVERSION" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1813,6 +1910,7 @@ Notes: This relation type registration did not indicate a reference. Originally 
         <p class="phpdocumentor-summary">Relation Name: latest-version
 Description: Points to a resource containing the latest (e.g., current) version of the context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1825,15 +1923,16 @@ Description: Points to a resource containing the latest (e.g., current) version 
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_LICENSE">
         LICENSE
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_LICENSE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1846,6 +1945,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: license
 Description: Refers to a license associated with this context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1858,15 +1958,16 @@ Description: Refers to a license associated with this context.</p>
 Notes: For implications of use in HTML, see:  http://www.w3.org/TR/html5/links.html#link-type-license.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_LRDD">
         LRDD
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_LRDD" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1879,6 +1980,7 @@ Notes: For implications of use in HTML, see:  http://www.w3.org/TR/html5/links.h
         <p class="phpdocumentor-summary">Relation Name: lrdd
 Description: Refers to further information about the link&#039;s context, expressed as a LRDD (&quot;&quot;Link-based Resource Descriptor Document&quot;&quot;) resource.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1894,15 +1996,16 @@ Reference: [RFC6415]
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_MEMENTO">
         MEMENTO
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_MEMENTO" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1915,6 +2018,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: memento
 Description: The Target IRI points to a Memento, a fixed resource that will not change state anymore.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1927,15 +2031,16 @@ Description: The Target IRI points to a Memento, a fixed resource that will not 
 Notes: A Memento for an Original Resource is a resource that encapsulates a prior state of the Original Resource.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_MONITOR">
         MONITOR
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_MONITOR" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1948,6 +2053,7 @@ Notes: A Memento for an Original Resource is a resource that encapsulates a prio
         <p class="phpdocumentor-summary">Relation Name: monitor
 Description: Refers to a resource that can be used to monitor changes in an HTTP resource.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1960,15 +2066,16 @@ Description: Refers to a resource that can be used to monitor changes in an HTTP
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_MONITORGROUP">
         MONITORGROUP
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_MONITORGROUP" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -1981,6 +2088,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: monitor-group
 Description: Refers to a resource that can be used to monitor changes in a specified group of HTTP resources.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1993,15 +2101,16 @@ Description: Refers to a resource that can be used to monitor changes in a speci
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_NEXT">
         NEXT
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_NEXT" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2014,6 +2123,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: next
 Description: Indicates that the link&#039;s context is a part of a series, and that the next in the series is the link target.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2026,15 +2136,16 @@ Description: Indicates that the link&#039;s context is a part of a series, and t
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_NEXTARCHIVE">
         NEXTARCHIVE
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_NEXTARCHIVE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2047,6 +2158,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: next-archive
 Description: Refers to the immediately following archive resource.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2059,15 +2171,16 @@ Description: Refers to the immediately following archive resource.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_NOFOLLOW">
         NOFOLLOW
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_NOFOLLOW" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2080,6 +2193,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: nofollow
 Description: Indicates that the context�s original author or publisher does not endorse the link target.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2092,15 +2206,16 @@ Description: Indicates that the context�s original author or publisher does no
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_NOREFERRER">
         NOREFERRER
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_NOREFERRER" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2113,6 +2228,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: noreferrer
 Description: Indicates that no referrer information is to be leaked when following the link.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2125,15 +2241,16 @@ Description: Indicates that no referrer information is to be leaked when followi
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_ORIGINAL">
         ORIGINAL
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ORIGINAL" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2146,6 +2263,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: original
 Description: The Target IRI points to an Original Resource.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2158,15 +2276,16 @@ Description: The Target IRI points to an Original Resource.</p>
 Notes: An Original Resource is a resource that exists or used to exist, and for which access to one of its prior states may be required.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_PAYMENT">
         PAYMENT
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PAYMENT" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2179,6 +2298,7 @@ Notes: An Original Resource is a resource that exists or used to exist, and for 
         <p class="phpdocumentor-summary">Relation Name: payment
 Description: Indicates a resource where payment is accepted.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2197,15 +2317,16 @@ For example, a rel=&quot;&quot;payment&quot;&quot; link at the feed/channel leve
 whereas an entry/ item containing a book review may include a rel=&quot;&quot;payment&quot;&quot; link that points to the location where the book may be purchased through an online retailer.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_PREDECESSORVERSION">
         PREDECESSORVERSION
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREDECESSORVERSION" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2218,6 +2339,7 @@ whereas an entry/ item containing a book review may include a rel=&quot;&quot;pa
         <p class="phpdocumentor-summary">Relation Name: predecessor-version
 Description: Points to a resource containing the predecessor version in the version history.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2230,15 +2352,16 @@ Description: Points to a resource containing the predecessor version in the vers
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_PREFETCH">
         PREFETCH
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREFETCH" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2251,6 +2374,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: prefetch
 Description: Indicates that the link target should be preemptively cached.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2263,15 +2387,16 @@ Description: Indicates that the link target should be preemptively cached.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_PREV">
         PREV
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREV" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2284,6 +2409,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: prev
 Description: Indicates that the link&#039;s context is a part of a series, and that the previous in the series is the link target.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2296,15 +2422,16 @@ Description: Indicates that the link&#039;s context is a part of a series, and t
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_PREVARCHIVE">
         PREVARCHIVE
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREVARCHIVE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2317,6 +2444,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: prev-archive
 Description: Refers to the immediately preceding archive resource.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2329,15 +2457,16 @@ Description: Refers to the immediately preceding archive resource.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_PREVIEW">
         PREVIEW
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREVIEW" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2350,6 +2479,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: preview
 Description: Refers to a resource that provides a preview of the link&#039;s context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2362,15 +2492,16 @@ Description: Refers to a resource that provides a preview of the link&#039;s con
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_PREVIOUS">
         PREVIOUS
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREVIOUS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2383,6 +2514,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: previous
 Description: Refers to the previous resource in an ordered series of resources.  Synonym for &quot;&quot;prev&quot;&quot;.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2395,15 +2527,16 @@ Description: Refers to the previous resource in an ordered series of resources. 
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_PRIVACYPOLICY">
         PRIVACYPOLICY
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PRIVACYPOLICY" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2416,6 +2549,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: privacy-policy
 Description: Refers to a privacy policy associated with the link&#039;s context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2428,15 +2562,16 @@ Description: Refers to a privacy policy associated with the link&#039;s context.
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_PROFILE">
         PROFILE
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PROFILE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2449,6 +2584,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: profile
 Description: Identifying that a resource representation conforms. of the resource representation.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2461,15 +2597,16 @@ Description: Identifying that a resource representation conforms. of the resourc
 Notes: Profile URIs are primarily intended to be used as identifiers, and thus clients SHOULD NOT indiscriminately access profile URIs.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_RELATED">
         RELATED
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_RELATED" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2482,6 +2619,7 @@ Notes: Profile URIs are primarily intended to be used as identifiers, and thus c
         <p class="phpdocumentor-summary">Relation Name: related
 Description: Identifies a related resource.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2494,15 +2632,16 @@ Description: Identifies a related resource.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_REPLIES">
         REPLIES
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_REPLIES" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2515,6 +2654,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: replies
 Description: Identifies a resource that is a reply to the context of the link.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2527,15 +2667,16 @@ Description: Identifies a resource that is a reply to the context of the link.</
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_SEARCH">
         SEARCH
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SEARCH" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2548,6 +2689,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: search
 Description: Refers to a resource that can be used to search through the link&#039;s context and related resources.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2560,15 +2702,16 @@ Description: Refers to a resource that can be used to search through the link&#0
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_SECTION">
         SECTION
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SECTION" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2581,6 +2724,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: section
 Description: Refers to a section in a collection of resources.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2593,15 +2737,16 @@ Description: Refers to a section in a collection of resources.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_SELF">
         SELF
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SELF" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2614,6 +2759,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: self
 Description: Conveys an identifier for the link&#039;s context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2626,15 +2772,16 @@ Description: Conveys an identifier for the link&#039;s context.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_SERVICE">
         SERVICE
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SERVICE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2647,6 +2794,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: service
 Description: Indicates a URI that can be used to retrieve a service document.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2659,15 +2807,16 @@ Description: Indicates a URI that can be used to retrieve a service document.</p
 Notes: When used in an Atom document, this relation type specifies Atom Publishing Protocol service documents by default.  Requested by James Snell.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_START">
         START
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_START" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2680,6 +2829,7 @@ Notes: When used in an Atom document, this relation type specifies Atom Publishi
         <p class="phpdocumentor-summary">Relation Name: start
 Description: Refers to the first resource in a collection of resources.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2692,15 +2842,16 @@ Description: Refers to the first resource in a collection of resources.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_STYLESHEET">
         STYLESHEET
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_STYLESHEET" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2713,6 +2864,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: stylesheet
 Description: Refers to a stylesheet.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2725,15 +2877,16 @@ Description: Refers to a stylesheet.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_SUBSECTION">
         SUBSECTION
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SUBSECTION" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2746,6 +2899,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: subsection
 Description: Refers to a resource serving as a subsection in a collection of resources.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2758,15 +2912,16 @@ Description: Refers to a resource serving as a subsection in a collection of res
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_SUCCESSORVERSION">
         SUCCESSORVERSION
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SUCCESSORVERSION" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2779,6 +2934,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: successor-version
 Description: Points to a resource containing the successor version in the version history.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2791,15 +2947,16 @@ Description: Points to a resource containing the successor version in the versio
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_TAG">
         TAG
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TAG" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2812,6 +2969,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: tag
 Description: Gives a tag (identified by the given address) that applies to the current document.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2824,15 +2982,16 @@ Description: Gives a tag (identified by the given address) that applies to the c
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_TERMSOFSERVICE">
         TERMSOFSERVICE
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TERMSOFSERVICE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2845,6 +3004,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: terms-of-service
 Description: Refers to the terms of service associated with the link&#039;s context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2857,15 +3017,16 @@ Description: Refers to the terms of service associated with the link&#039;s cont
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_TIMEGATE">
         TIMEGATE
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TIMEGATE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2878,6 +3039,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: timegate
 Description: The Target IRI points to a TimeGate for an Original Resource.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2890,15 +3052,16 @@ Description: The Target IRI points to a TimeGate for an Original Resource.</p>
 Notes: A TimeGate for an Original Resource is a resource that is capable of datetime negotiation to support access to prior states of the Original Resource.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_TIMEMAP">
         TIMEMAP
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TIMEMAP" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2911,6 +3074,7 @@ Notes: A TimeGate for an Original Resource is a resource that is capable of date
         <p class="phpdocumentor-summary">Relation Name: timemap
 Description: The Target IRI points to a TimeMap for an Original Resource.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2923,15 +3087,16 @@ Description: The Target IRI points to a TimeMap for an Original Resource.</p>
 Notes: A TimeMap for an Original Resource is a resource from which a list of URIs of Mementos of the Original Resource is available.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_TYPE">
         TYPE
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TYPE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2944,6 +3109,7 @@ Notes: A TimeMap for an Original Resource is a resource from which a list of URI
         <p class="phpdocumentor-summary">Relation Name: type
 Description: Refers to a resource identifying the abstract semantic type of which the link&#039;s context is considered to be an instance.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2956,15 +3122,16 @@ Description: Refers to a resource identifying the abstract semantic type of whic
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_UP">
         UP
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_UP" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -2977,6 +3144,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: up
 Description: Refers to a parent document in a hierarchy of documents.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -2989,15 +3157,16 @@ Description: Refers to a parent document in a hierarchy of documents.</p>
 Notes: This relation type registration did not indicate a reference.  Requested by Noah Slater.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_VERSIONHISTORY">
         VERSIONHISTORY
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_VERSIONHISTORY" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -3010,6 +3179,7 @@ Notes: This relation type registration did not indicate a reference.  Requested 
         <p class="phpdocumentor-summary">Relation Name: version-history
 Description: Points to a resource containing the version history for the context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -3022,15 +3192,16 @@ Description: Points to a resource containing the version history for the context
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_VIA">
         VIA
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_VIA" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -3043,6 +3214,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: via
 Description: Identifies a resource that is the source of the information in the link&#039;s context.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -3055,15 +3227,16 @@ Description: Identifies a resource that is the source of the information in the 
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_WORKINGCOPY">
         WORKINGCOPY
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_WORKINGCOPY" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -3076,6 +3249,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: working-copy
 Description: Points to a working copy for this resource.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -3088,15 +3262,16 @@ Description: Points to a working copy for this resource.</p>
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_WORKINGCOPYOF">
         WORKINGCOPYOF
         <a href="classes/HapiClient-Hal-RegisteredRel.html#constant_WORKINGCOPYOF" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -3109,6 +3284,7 @@ Notes:.</p>
         <p class="phpdocumentor-summary">Relation Name: working-copy-of
 Description: Points to the versioned resource from which this working copy was obtained.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -3121,11 +3297,11 @@ Description: Points to the versioned resource from which this working copy was o
 Notes:.</p>
 </section>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
-</article>
+        
+    </article>
             </section>
 
         
@@ -3134,6 +3310,7 @@ Notes:.</p>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/HapiClient-Hal-RegisteredRel.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -3144,6 +3321,7 @@ Notes:.</p>
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/HapiClient-Hal-RegisteredRel.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Hal/RegisteredRel.php"><a href="files/src-hal-registeredrel.html"><abbr title="src/Hal/RegisteredRel.php">RegisteredRel.php</abbr></a></abbr>
@@ -3157,83 +3335,126 @@ Notes:.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
         
+    
     
 </article>
             </section>
 
         
-    <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
-
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
-
-                pre.textContent = '';
-
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
-
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
-
-                        if (xhr.status < 400 && xhr.responseText) {
-                            code.textContent = xhr.responseText;
-
-                            Prism.highlightElement(code);
-                        }
-                        else if (xhr.status >= 400) {
-                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
-                        }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
-                    }
-                };
-
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
-                    });
-                });
-            });
-        });
-    </script>
-
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/HapiClient-Hal-RegisteredRel.html#toc-constants">Constants</a></li>
+                                                                                <li><a href="classes/HapiClient-Hal-RegisteredRel.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ABOUT">ABOUT</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ALTERNATE">ALTERNATE</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_APPENDIX">APPENDIX</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ARCHIVES">ARCHIVES</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_AUTHOR">AUTHOR</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_BOOKMARK">BOOKMARK</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CANONICAL">CANONICAL</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CHAPTER">CHAPTER</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_COLLECTION">COLLECTION</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CONTENTS">CONTENTS</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_COPYRIGHT">COPYRIGHT</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CREATEFORM">CREATEFORM</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CURIES">CURIES</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_CURRENT">CURRENT</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DERIVEDFROM">DERIVEDFROM</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DESCRIBEDBY">DESCRIBEDBY</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DESCRIBES">DESCRIBES</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DISCLOSURE">DISCLOSURE</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_DUPLICATE">DUPLICATE</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_EDIT">EDIT</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_EDITFORM">EDITFORM</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_EDITMEDIA">EDITMEDIA</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ENCLOSURE">ENCLOSURE</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_FIRST">FIRST</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_GLOSSARY">GLOSSARY</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_HELP">HELP</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_HOSTS">HOSTS</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_HUB">HUB</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ICON">ICON</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_INDEX">INDEX</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ITEM">ITEM</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_LAST">LAST</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_LATESTVERSION">LATESTVERSION</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_LICENSE">LICENSE</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_LRDD">LRDD</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_MEMENTO">MEMENTO</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_MONITOR">MONITOR</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_MONITORGROUP">MONITORGROUP</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_NEXT">NEXT</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_NEXTARCHIVE">NEXTARCHIVE</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_NOFOLLOW">NOFOLLOW</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_NOREFERRER">NOREFERRER</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_ORIGINAL">ORIGINAL</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PAYMENT">PAYMENT</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREDECESSORVERSION">PREDECESSORVERSION</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREFETCH">PREFETCH</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREV">PREV</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREVARCHIVE">PREVARCHIVE</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREVIEW">PREVIEW</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PREVIOUS">PREVIOUS</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PRIVACYPOLICY">PRIVACYPOLICY</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_PROFILE">PROFILE</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_RELATED">RELATED</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_REPLIES">REPLIES</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SEARCH">SEARCH</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SECTION">SECTION</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SELF">SELF</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SERVICE">SERVICE</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_START">START</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_STYLESHEET">STYLESHEET</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SUBSECTION">SUBSECTION</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_SUCCESSORVERSION">SUCCESSORVERSION</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TAG">TAG</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TERMSOFSERVICE">TERMSOFSERVICE</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TIMEGATE">TIMEGATE</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TIMEMAP">TIMEMAP</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_TYPE">TYPE</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_UP">UP</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_VERSIONHISTORY">VERSIONHISTORY</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_VIA">VIA</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_WORKINGCOPY">WORKINGCOPY</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#constant_WORKINGCOPYOF">WORKINGCOPYOF</a></li>
+                                            </ul>
+                </li>
+            
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/HapiClient-Hal-RegisteredRel.html#method___construct">__construct()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -3244,7 +3465,6 @@ Notes:.</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/HapiClient-Hal-RegisteredRel.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

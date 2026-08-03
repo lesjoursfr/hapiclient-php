@@ -6,11 +6,14 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
     <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +22,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,8 +56,8 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/hapiclient.html" class="">HapiClient</a>
@@ -78,7 +82,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -86,21 +90,22 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hapiclient.html">HapiClient</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hapiclient-hal.html">Hal</a></li>
     </ul>
@@ -128,18 +133,19 @@ JSON Hypertext Application Language (draft-kelly-json-hal-07).</p>
 
 
 
+
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/HapiClient-Hal-ResourceInterface.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-07#section-4"><abbr title="https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-07#section-4">https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-07#section-4</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"><p>Note: When trying to find a Link or an embedded Resource
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">see</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-07#section-4">https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-07#section-4</a></span>
+                                                                    <section class="phpdocumentor-description"><p>Note: When trying to find a Link or an embedded Resource
 by their relation type (Rel), the search is done by
 comparing the lower-case relation name.</p>
 <p>&quot;When extension relation types are compared, they MUST be compared as
@@ -147,87 +153,98 @@ strings [...] in a case-insensitive fashion.&quot;</p>
 </section>
 
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="https://tools.ietf.org/html/rfc5988#section-4.2"><abbr title="https://tools.ietf.org/html/rfc5988#section-4.2">https://tools.ietf.org/html/rfc5988#section-4.2</abbr></a></span>
-                                        
-                                             
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="https://tools.ietf.org/html/rfc5988#section-4.2">https://tools.ietf.org/html/rfc5988#section-4.2</a></span>
+                                                                
                                     </dd>
                         </dl>
 
-
-
-
-
-
+    
+    
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/HapiClient-Hal-ResourceInterface.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/HapiClient-Hal-ResourceInterface.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                        <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/HapiClient-Hal-ResourceInterface.html#method_fromJson">fromJson()</a>
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/HapiClient-Hal-ResourceInterface.html#method_fromJson">fromJson()</a>
     <span>
                                 &nbsp;: resource    </span>
 </dt>
 <dd>Builds a Resource from its JSON representation.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getAllEmbeddedResources">getAllEmbeddedResources()</a>
+    <a class="" href="classes/HapiClient-Hal-ResourceInterface.html#method_getAllEmbeddedResources">getAllEmbeddedResources()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>All the embedded resources directly available in the resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getAllLinks">getAllLinks()</a>
+    <a class="" href="classes/HapiClient-Hal-ResourceInterface.html#method_getAllLinks">getAllLinks()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>All the links directly available in the resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getEmbeddedResource">getEmbeddedResource()</a>
+    <a class="" href="classes/HapiClient-Hal-ResourceInterface.html#method_getEmbeddedResource">getEmbeddedResource()</a>
     <span>
                                 &nbsp;: resource    </span>
 </dt>
 <dd>Finds a unique embedded resource by its relation type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getEmbeddedResources">getEmbeddedResources()</a>
+    <a class="" href="classes/HapiClient-Hal-ResourceInterface.html#method_getEmbeddedResources">getEmbeddedResources()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Finds an array of embedded resources by their relation type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getLink">getLink()</a>
+    <a class="" href="classes/HapiClient-Hal-ResourceInterface.html#method_getLink">getLink()</a>
     <span>
                                 &nbsp;: <a href="classes/HapiClient-Hal-Link.html"><abbr title="\HapiClient\Hal\Link">Link</abbr></a>    </span>
 </dt>
 <dd>Finds a unique link by its relation type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getLinks">getLinks()</a>
+    <a class="" href="classes/HapiClient-Hal-ResourceInterface.html#method_getLinks">getLinks()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Finds an array of links by their relation type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getState">getState()</a>
+    <a class="" href="classes/HapiClient-Hal-ResourceInterface.html#method_getState">getState()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>All the properties of the resource
 (&quot;_links&quot; and &quot;_embedded&quot; not included).</dd>
 
-        </dl>
+    </dl>
 
 
+
+
+        
 
         
 
@@ -235,6 +252,7 @@ strings [...] in a case-insensitive fashion.&quot;</p>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/HapiClient-Hal-ResourceInterface.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -245,6 +263,7 @@ strings [...] in a case-insensitive fashion.&quot;</p>
     <h4 class="phpdocumentor-element__name" id="method_fromJson">
         fromJson()
         <a href="classes/HapiClient-Hal-ResourceInterface.html#method_fromJson" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Hal/ResourceInterface.php"><a href="files/src-hal-resourceinterface.html"><abbr title="src/Hal/ResourceInterface.php">ResourceInterface.php</abbr></a></abbr>
@@ -257,14 +276,17 @@ strings [...] in a case-insensitive fashion.&quot;</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromJson</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;|object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$json</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromJson</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string|array&lt;string|int, mixed&gt;|object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$json</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$json</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;|object</span>
+                <span class="phpdocumentor-argument-list__argument__name">$json</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|array&lt;string|int, mixed&gt;|object</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>A JSON representing the resource</p>
@@ -275,11 +297,13 @@ strings [...] in a case-insensitive fashion.&quot;</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">resource</span>
-            &mdash;
         
     
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">resource</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -290,6 +314,7 @@ strings [...] in a case-insensitive fashion.&quot;</p>
     <h4 class="phpdocumentor-element__name" id="method_getAllEmbeddedResources">
         getAllEmbeddedResources()
         <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getAllEmbeddedResources" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Hal/ResourceInterface.php"><a href="files/src-hal-resourceinterface.html"><abbr title="src/Hal/ResourceInterface.php">ResourceInterface.php</abbr></a></abbr>
@@ -304,6 +329,9 @@ strings [...] in a case-insensitive fashion.&quot;</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getAllEmbeddedResources</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <section class="phpdocumentor-description"><p>The key is the relation type (Rel) and the value
 can be either a Resource or a numeric array of Resources.</p>
 <p>Note that there is no guarantees as to the order of the embedded resources.</p>
@@ -312,11 +340,13 @@ can be either a Resource or a numeric array of Resources.</p>
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
         
     
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -327,6 +357,7 @@ can be either a Resource or a numeric array of Resources.</p>
     <h4 class="phpdocumentor-element__name" id="method_getAllLinks">
         getAllLinks()
         <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getAllLinks" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Hal/ResourceInterface.php"><a href="files/src-hal-resourceinterface.html"><abbr title="src/Hal/ResourceInterface.php">ResourceInterface.php</abbr></a></abbr>
@@ -341,6 +372,9 @@ can be either a Resource or a numeric array of Resources.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getAllLinks</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <section class="phpdocumentor-description"><p>The key is the relation type (Rel) and the value
 can be either a Link or a numeric array of Links.</p>
 <p>Note that there is no guarantees as to the order of the links.</p>
@@ -349,11 +383,13 @@ can be either a Link or a numeric array of Links.</p>
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
         
     
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -364,6 +400,7 @@ can be either a Link or a numeric array of Links.</p>
     <h4 class="phpdocumentor-element__name" id="method_getEmbeddedResource">
         getEmbeddedResource()
         <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getEmbeddedResource" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Hal/ResourceInterface.php"><a href="files/src-hal-resourceinterface.html"><abbr title="src/Hal/ResourceInterface.php">ResourceInterface.php</abbr></a></abbr>
@@ -376,14 +413,17 @@ can be either a Link or a numeric array of Links.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getEmbeddedResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rel</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
+                    <span class="phpdocumentor-signature__name">getEmbeddedResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rel</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rel</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$rel</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The relation type</p>
@@ -393,36 +433,36 @@ can be either a Link or a numeric array of Links.</p>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getEmbeddedResource_tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getEmbeddedResource_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/HapiClient-Exception-EmbeddedResourceNotUniqueException.html"><abbr title="\HapiClient\Exception\EmbeddedResourceNotUniqueException">EmbeddedResourceNotUniqueException</abbr></a></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/HapiClient-Exception-RelNotFoundException.html"><abbr title="\HapiClient\Exception\RelNotFoundException">RelNotFoundException</abbr></a></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
                         </dl>
 
+        
+    
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">resource</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>the Resource referenced by the given rel</p>
+        <span class="phpdocumentor-signature__response_type">resource</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>the Resource referenced by the given rel</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -433,6 +473,7 @@ can be either a Link or a numeric array of Links.</p>
     <h4 class="phpdocumentor-element__name" id="method_getEmbeddedResources">
         getEmbeddedResources()
         <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getEmbeddedResources" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Hal/ResourceInterface.php"><a href="files/src-hal-resourceinterface.html"><abbr title="src/Hal/ResourceInterface.php">ResourceInterface.php</abbr></a></abbr>
@@ -445,16 +486,19 @@ can be either a Link or a numeric array of Links.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getEmbeddedResources</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rel</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getEmbeddedResources</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rel</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <section class="phpdocumentor-description"><p>Note that there is no guarantees as to the order of the resources.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rel</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$rel</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The relation type</p>
@@ -464,36 +508,36 @@ can be either a Link or a numeric array of Links.</p>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getEmbeddedResources_tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getEmbeddedResources_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/HapiClient-Exception-EmbeddedResourceUniqueException.html"><abbr title="\HapiClient\Exception\EmbeddedResourceUniqueException">EmbeddedResourceUniqueException</abbr></a></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/HapiClient-Exception-RelNotFoundException.html"><abbr title="\HapiClient\Exception\RelNotFoundException">RelNotFoundException</abbr></a></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
                         </dl>
 
+        
+    
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Array of embedded resources referenced by the given rel</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Array of embedded resources referenced by the given rel</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -504,6 +548,7 @@ can be either a Link or a numeric array of Links.</p>
     <h4 class="phpdocumentor-element__name" id="method_getLink">
         getLink()
         <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getLink" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Hal/ResourceInterface.php"><a href="files/src-hal-resourceinterface.html"><abbr title="src/Hal/ResourceInterface.php">ResourceInterface.php</abbr></a></abbr>
@@ -516,14 +561,17 @@ can be either a Link or a numeric array of Links.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getLink</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rel</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/HapiClient-Hal-Link.html"><abbr title="\HapiClient\Hal\Link">Link</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">getLink</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rel</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/HapiClient-Hal-Link.html"><abbr title="\HapiClient\Hal\Link">Link</abbr></a></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rel</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$rel</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The relation type</p>
@@ -533,36 +581,36 @@ can be either a Link or a numeric array of Links.</p>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getLink_tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getLink_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/HapiClient-Exception-LinkNotUniqueException.html"><abbr title="\HapiClient\Exception\LinkNotUniqueException">LinkNotUniqueException</abbr></a></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/HapiClient-Exception-RelNotFoundException.html"><abbr title="\HapiClient\Exception\RelNotFoundException">RelNotFoundException</abbr></a></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
                         </dl>
 
+        
+    
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/HapiClient-Hal-Link.html"><abbr title="\HapiClient\Hal\Link">Link</abbr></a></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>the Link referenced by the given rel</p>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/HapiClient-Hal-Link.html"><abbr title="\HapiClient\Hal\Link">Link</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>the Link referenced by the given rel</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -573,6 +621,7 @@ can be either a Link or a numeric array of Links.</p>
     <h4 class="phpdocumentor-element__name" id="method_getLinks">
         getLinks()
         <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getLinks" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Hal/ResourceInterface.php"><a href="files/src-hal-resourceinterface.html"><abbr title="src/Hal/ResourceInterface.php">ResourceInterface.php</abbr></a></abbr>
@@ -585,16 +634,19 @@ can be either a Link or a numeric array of Links.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getLinks</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rel</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getLinks</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rel</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <section class="phpdocumentor-description"><p>Note that there is no guarantees as to the order of the links.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rel</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$rel</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/HapiClient-Hal-RegisteredRel.html"><abbr title="\HapiClient\Hal\RegisteredRel">RegisteredRel</abbr></a>|<a href="classes/HapiClient-Hal-CustomRel.html"><abbr title="\HapiClient\Hal\CustomRel">CustomRel</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The relation type</p>
@@ -604,36 +656,36 @@ can be either a Link or a numeric array of Links.</p>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getLinks_tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getLinks_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/HapiClient-Exception-LinkUniqueException.html"><abbr title="\HapiClient\Exception\LinkUniqueException">LinkUniqueException</abbr></a></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><a href="classes/HapiClient-Exception-RelNotFoundException.html"><abbr title="\HapiClient\Exception\RelNotFoundException">RelNotFoundException</abbr></a></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
                         </dl>
 
+        
+    
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Array of links referenced by the given rel</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Array of links referenced by the given rel</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -644,6 +696,7 @@ can be either a Link or a numeric array of Links.</p>
     <h4 class="phpdocumentor-element__name" id="method_getState">
         getState()
         <a href="classes/HapiClient-Hal-ResourceInterface.html#method_getState" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Hal/ResourceInterface.php"><a href="files/src-hal-resourceinterface.html"><abbr title="src/Hal/ResourceInterface.php">ResourceInterface.php</abbr></a></abbr>
@@ -659,82 +712,59 @@ can be either a Link or a numeric array of Links.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getState</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
         
     
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
             </section>
 
         
-    <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
-
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
-
-                pre.textContent = '';
-
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
-
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
-
-                        if (xhr.status < 400 && xhr.responseText) {
-                            code.textContent = xhr.responseText;
-
-                            Prism.highlightElement(code);
-                        }
-                        else if (xhr.status >= 400) {
-                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
-                        }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
-                    }
-                };
-
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
-                    });
-                });
-            });
-        });
-    </script>
-
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                                                <li><a href="classes/HapiClient-Hal-ResourceInterface.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/HapiClient-Hal-ResourceInterface.html#method_fromJson">fromJson()</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-ResourceInterface.html#method_getAllEmbeddedResources">getAllEmbeddedResources()</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-ResourceInterface.html#method_getAllLinks">getAllLinks()</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-ResourceInterface.html#method_getEmbeddedResource">getEmbeddedResource()</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-ResourceInterface.html#method_getEmbeddedResources">getEmbeddedResources()</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-ResourceInterface.html#method_getLink">getLink()</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-ResourceInterface.html#method_getLinks">getLinks()</a></li>
+                                                    <li class=""><a href="classes/HapiClient-Hal-ResourceInterface.html#method_getState">getState()</a></li>
+                                            </ul>
+                </li>
+            
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -745,7 +775,6 @@ can be either a Link or a numeric array of Links.</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/HapiClient-Hal-ResourceInterface.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
