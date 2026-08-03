@@ -45,7 +45,7 @@ class UrlEncodedBody extends AbstractMessageBody
      */
     public function getContentLength()
     {
-        return strlen($this->getContent());
+        return (string) strlen($this->getContent());
     }
 
     /**

@@ -45,7 +45,7 @@ class JsonBody extends AbstractMessageBody
      */
     public function getContentLength()
     {
-        return strlen($this->getContent());
+        return (string) strlen($this->getContent());
     }
 
     /**
